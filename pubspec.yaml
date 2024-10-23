@@ -1,51 +1,33 @@
 name: minimal_youtube_clone
 description: "A new Flutter project."
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
-
+  sdk: ">=3.4.3 <4.0.0"
 
 dependencies:
+  build_runner: ^2.4.10
+  cupertino_icons: ^1.0.6
+  dio: ^5.7.0
   flutter:
     sdk: flutter
-  
-
-  # State management
   flutter_bloc: ^8.1.6
-
-  # for dependency injection
   get_it: ^8.0.0
-
-  # Automatically generate code for converting to and from JSON by annotating Dart classes
   json_annotation: ^4.9.0
   json_serializable: ^6.8.0
-
-  # Networking
-  dio: ^5.7.0
   retrofit: ^4.4.1
   retrofit_generator: ^8.2.1
-  
-  #A build system for Dart code generation and modular compilation
-  build_runner: ^2.4.10
-
-
-
-  cupertino_icons: ^1.0.6
+  youtube_player_flutter: ^9.1.1
 
 dev_dependencies:
+  flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
-
-
 flutter:
-
   uses-material-design: true
 
   assets:

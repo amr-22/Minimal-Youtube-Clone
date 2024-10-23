@@ -16,17 +16,17 @@ Future<void> main() async {
 Dio createAndSetupDio() {
   Dio dio = Dio();
   // dio.options.headers['X-Auth-Token'] = 'bb63408014824d05ae15ece3143de40f';
-  dio
-    ..options.connectTimeout = Duration(seconds: 2)
-    ..options.receiveTimeout = Duration(seconds: 2);
+  // dio
+  //   ..options.connectTimeout = Duration(seconds: 2)
+  //   ..options.receiveTimeout = Duration(seconds: 2);
 
   dio.interceptors.add(LogInterceptor(
-    responseBody: false,
+    // responseBody: false,
     error: true,
-    requestHeader: false,
-    responseHeader: false,
+    // requestHeader: false,
+    // responseHeader: false,
     request: true,
-    requestBody: true,
+    // requestBody: true,
   ));
 
   return dio;

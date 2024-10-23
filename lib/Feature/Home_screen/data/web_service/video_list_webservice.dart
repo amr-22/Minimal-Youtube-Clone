@@ -11,7 +11,6 @@ abstract class VideoListWebservice {
       _VideoListWebservice;
 
 
-  // @GET('videos?part=snippet&chart=mostPopular&regionCode=US&key=AIzaSyDCXSWA7EeFCOVnd7FVCOiudOXiXHC5Enc' )
   @GET("videos")
   Future<VideosList> getAllVideos  (
    @Query("part") String part, // e.g., "snippet"
